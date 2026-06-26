@@ -9,8 +9,12 @@ Spiking Neural Networks (SNNs) represent the third generation of artificial neur
 
 The development of biologically inspired AI has transitioned from highly complex, non-integrable biophysical equations to simplified, hardware-friendly mathematical models and automated backpropagation compilers.
 
-[Biophysical Era (Hodgkin-Huxley, 1952)] ----> [Simplified Phenotype Era (LIF / Izhikevich)] ----> [Modern Neuromorphic Era (Deep SNNs, 2020s+)](Unscalable Differential Systems)               (Hardware-Friendly Voltage Integration)           (Surrogate Gradients & Hybrid Models)
-
+```mermaid
+flowchart LR
+    A["Biophysical Era (Hodgkin-Huxley, 1952)<br/>(Unscalable Differential Systems)"]
+    --> B["Simplified Phenotype Era (LIF / Izhikevich)<br/>(Hardware-Friendly Voltage Integration)"]
+    --> C["Modern Neuromorphic Era (Deep SNNs, 2020s+)<br/>(Surrogate Gradients & Hybrid Models)"]
+```
 
 *   **The Biophysical Foundation Era (Hodgkin-Huxley Model, 1952)**
     *   *Concept:* The foundation of computational neuroscience. Formulated a series of four continuous, non-linear differential equations tracking ionic current flows (sodium, potassium) across a squid giant axon membrane.
