@@ -1,11 +1,22 @@
-# Awesome-Spiking-Neural-Networks
-## Spiking Neural Networks (SNNs): Evolution, Variants, Types, & Applications
+# Awesome Spiking Neural Networks (SNNs) 🧠⚡
 
-Spiking Neural Networks (SNNs) represent the third generation of artificial neural networks. Unlike traditional deep learning models (1st and 2nd generations) that use continuous, decimal activation values to transmit information in regular steps, SNNs communicate using discrete, binary, and time-stamped electrical pulses called **spikes**. This architecture closely mirrors the biophysical processing mechanisms of the human brain. By calculating activations only when an explicit voltage threshold is crossed, SNNs unlock **event-driven computation**, enabling ultra-low-power neuromorphic hardware execution that consumes milliwatts instead of the hundreds of watts demanded by standard silicon GPUs.
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Spiking Neural Networks Banner" width="100%" />
+</p>
+
+<div align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a><a href="https://github.com/ishandutta2007/Awesome-Spiking-Neural-Networks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Spiking-Neural-Networks?style=flat-square" alt="Stars"/></a><a href="https://github.com/ishandutta2007/Awesome-Spiking-Neural-Networks/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Spiking-Neural-Networks?style=flat-square" alt="License"/></a><a href="https://github.com/ishandutta2007/Awesome-Spiking-Neural-Networks/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</div>
 
 ---
 
-## 1. The Chronological Evolution
+## 📖 Introduction to Spiking Neural Networks (SNNs)
+
+Spiking Neural Networks (SNNs) represent the **third generation of artificial neural networks**. Unlike traditional deep learning models (1st and 2nd generations) that use continuous, decimal activation values to transmit information in regular steps, SNNs communicate using discrete, binary, and time-stamped electrical pulses called **spikes**. This architecture closely mirrors the biophysical processing mechanisms of the human brain. By calculating activations only when an explicit voltage threshold is crossed, SNNs unlock **event-driven computation**, enabling ultra-low-power neuromorphic hardware execution that consumes milliwatts instead of the hundreds of watts demanded by standard silicon GPUs.
+
+---
+
+## 📅 1. The Chronological Evolution
 
 The development of biologically inspired AI has transitioned from highly complex, non-integrable biophysical equations to simplified, hardware-friendly mathematical models and automated backpropagation compilers.
 
@@ -24,7 +35,7 @@ flowchart LR
 
 ---
 
-## 2. Core Neuron Mathematical Models
+## 🧬 2. Core Neuron Mathematical Models
 
 SNN architectures are structured around specialized mathematical cell blocks that dictate how incoming spikes alter the internal membrane potential of a neuron over time.
 
@@ -36,7 +47,7 @@ SNN architectures are structured around specialized mathematical cell blocks tha
 
 ---
 
-## 3. Training & Learning Modality Types
+## 🧠 3. Training & Learning Modality Types
 
 Because spikes are discrete binary events, training SNNs requires specialized local biological algorithms or modified deep learning loss approximations.
 
@@ -48,7 +59,7 @@ Because spikes are discrete binary events, training SNNs requires specialized lo
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Trade-Offs
+## ⚙️ 4. Production Engineering Challenges & Hardware Trade-Offs
 
 Deploying spiking networks into high-volume edge environments introduces unique computing dynamics compared to traditional silicon processing.
 
@@ -59,11 +70,10 @@ Deploying spiking networks into high-volume edge environments introduces unique 
 
 ---
 
-## 5. Frontier Real-World Applications
+## 🚀 5. Frontier Real-World Applications
 
 | Application Area | Year | Original Paper | Description & Details |
 | :--- | :--- | :--- | :--- |
 | [**Ultra-Low-Power Edge Microcontrollers (TinyML)**](details/edge_microcontrollers_tinyml.md) | 2019 | [Warden & Situnayake (2019)](https://www.oreilly.com/library/view/tinyml/9781492052036/) | **Application:** Integrated into battery-powered Internet-of-Things (IoT) setups, wearable health sensors, or remote acoustic wildlife trackers. SNNs run continuously in a "sleep" state, drawing absolute zero operational power until an anomaly triggers a spike sequence. |
 | [**High-Frame-Rate Neuromorphic Vision Perceptions**](details/neuromorphic_vision_perceptions.md) | 2008 | [Lichtsteiner et al. (2008)](https://doi.org/10.1109/JSSC.2007.914337) | **Application:** Paired directly with **Event-Based Cameras (Dynamic Vision Sensors - DVS)**. Unlike standard cameras that record rigid video frames, a DVS pixel only outputs data when it detects a local change in brightness. SNNs ingest this asynchronous streaming spike data natively, tracking moving targets (like drone obstacle avoidance arrays) under extreme speeds with microsecond latency. |
 | [**Asynchronous Aerospace & Robotics Control**](details/aerospace_robotics_control.md) | 2018 | [Bing et al. (2018)](https://doi.org/10.3389/fnbot.2018.00035) | **Application:** Drives real-time kinetic corrections for robotic limbs, prosthetics, or spacecraft docking maneuvers. Localized STDP training loops allow the robotic joint to adjust its motor actuation parameters dynamically to handle load changes without cloud connectivity. |
-
