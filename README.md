@@ -77,3 +77,14 @@ Deploying spiking networks into high-volume edge environments introduces unique 
 | [**Ultra-Low-Power Edge Microcontrollers (TinyML)**](details/edge_microcontrollers_tinyml.md) | 2019 | [Warden & Situnayake (2019)](https://www.oreilly.com/library/view/tinyml/9781492052036/) | **Application:** Integrated into battery-powered Internet-of-Things (IoT) setups, wearable health sensors, or remote acoustic wildlife trackers. SNNs run continuously in a "sleep" state, drawing absolute zero operational power until an anomaly triggers a spike sequence. |
 | [**High-Frame-Rate Neuromorphic Vision Perceptions**](details/neuromorphic_vision_perceptions.md) | 2008 | [Lichtsteiner et al. (2008)](https://doi.org/10.1109/JSSC.2007.914337) | **Application:** Paired directly with **Event-Based Cameras (Dynamic Vision Sensors - DVS)**. Unlike standard cameras that record rigid video frames, a DVS pixel only outputs data when it detects a local change in brightness. SNNs ingest this asynchronous streaming spike data natively, tracking moving targets (like drone obstacle avoidance arrays) under extreme speeds with microsecond latency. |
 | [**Asynchronous Aerospace & Robotics Control**](details/aerospace_robotics_control.md) | 2018 | [Bing et al. (2018)](https://doi.org/10.3389/fnbot.2018.00035) | **Application:** Drives real-time kinetic corrections for robotic limbs, prosthetics, or spacecraft docking maneuvers. Localized STDP training loops allow the robotic joint to adjust its motor actuation parameters dynamically to handle load changes without cloud connectivity. |
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Spiking-Neural-Networks&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Spiking-Neural-Networks&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Spiking-Neural-Networks&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Spiking-Neural-Networks&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
